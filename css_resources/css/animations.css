@@ -1,0 +1,57 @@
+@keyframes animation-box {
+    from {
+        background: red;
+    }
+    to {
+        background: blue;
+    }
+}
+
+.box {
+    width: 300px;
+    height: 300px;
+    background: red;
+}
+
+.box:hover {
+    animation: animation-box 5s /*timing-function delay iteration-count direction fill-mode*/;
+}
+
+#projects {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.amo, .px_devs {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+  
+.flip-amo, .flip-px_devs {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+  
+.amo:hover .flip-amo, .px_devs:hover .flip-px_devs {
+    transform: rotateX(-180deg);
+}
+  
+.flip-amo-front, .flip-amo-back, .flip-px_devs-front, .flip-px_devs-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+  
+.flip-amo-back, .flip-px_devs-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateX(180deg);
+}
