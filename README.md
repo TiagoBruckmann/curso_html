@@ -8,6 +8,6 @@ Reaprendizado de como utilizar o Bootstrap.
 projetos finalizados.
 
 <ul>
-    <li>Finans - Totalmente responsivo<li>
-    <li>Clone spotify - Não iniciado<li>
+    <li>Finans - Totalmente responsivo :heavy_check_mark:<li>
+    <li>Clone spotify - Totalmente responsivo :heavy_check_mark:<li>
 </ul>
